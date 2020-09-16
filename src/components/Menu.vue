@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-sm-12 col-md-6">
+    <!-- <div class="col-sm-12 col-md-6"> --><div class="col-md-6">
       <table class="table table-hover">
         <thead class="thead-default">
           <tr>
@@ -23,7 +23,30 @@
         </tbody>
       </table>
     </div>
-    {{ basket }}
+
+    <!-- <div class="col-sm-12 com-md-6"> --><div class="com-md-6">
+      <table class="table">
+        <thead class="thead-default">
+          <tr>
+            <th>Quantity</th>
+            <th>Item</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="btn btn-sm btn-secondary" type="button">-</button>
+              <span>1-</span>
+              <button class="btn btn-sm btn-secondary" type="button">+</button>
+            </td>
+            <td>Margherita 9"</td>
+            <td>9.95</td>
+          </tr>
+        </tbody>
+        <p>Order total: </p>
+        <button class="btn btn-success btn-block">Place Order</button>
+      </table>
+    </div>
   </div>
 </template>
 
