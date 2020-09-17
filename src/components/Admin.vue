@@ -2,7 +2,7 @@
 <div>
   <div class="row">
     <div class="col-md-6">
-      <!-- new pizza component -->
+      <pp-new-pizza></pp-new-pizza>
     </div>
     <div class="col-md-6">
       <h3>Menu:</h3>
@@ -59,6 +59,11 @@
 </template>
 
 <script>
-export default {};
+import NewPizza from './NewPizza'
+export default {
+  components: {
+    ppNewPizza: NewPizza
+  }
+};
 </script>
 
