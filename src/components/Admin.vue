@@ -1,10 +1,10 @@
 <template>
 <div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-sm-12 col-md-6">
       <pp-new-pizza></pp-new-pizza>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-12 col-md-6">
       <h3>Menu:</h3>
       <table class="table table-hover">
         <thead class="thead-default">
