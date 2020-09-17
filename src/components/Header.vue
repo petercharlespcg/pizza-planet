@@ -8,10 +8,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <router-link to="/" tag="li">
+      <router-link :to="homeLink" tag="li">
           <a class="nav-link">home <span class="sr-only">(current)</span></a>
       </router-link>
-      <router-link to="/menu" tag="li">
+      <router-link :to="menuLink" tag="li">
           <a class="nav-link">menu <span class="sr-only">(current)</span></a>
       </router-link>
     </ul>
@@ -19,6 +19,17 @@
 </nav>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      homeLink: '/',
+      menuLink: '/menu',
+    }
+  }
+}
+</script>
 
 <style scoped>
   header {
