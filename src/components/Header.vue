@@ -16,7 +16,7 @@
       </router-link>
     </ul>
   </div>
-</nav>
+    </nav>
   </header>
 </template>
 
