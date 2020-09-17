@@ -8,16 +8,12 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <router-link to="/">
+      <router-link to="/" tag="li">
           <a class="nav-link">home <span class="sr-only">(current)</span></a>
-        </router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/menu">
+      </router-link>
+      <router-link to="/menu" tag="li">
           <a class="nav-link">menu <span class="sr-only">(current)</span></a>
-        </router-link>
-      </li>
+      </router-link>
     </ul>
   </div>
 </nav>
