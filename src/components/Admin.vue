@@ -74,16 +74,23 @@ export default {
     ppNewPizza: NewPizza,
     ppLogin: Login
   },
-  data() {
-    return {
-      name: 'Chris'
+  // data() {
+  //   return {
+  //     name: 'Chris'
+  //   }
+  // },
+  // beforeRouteEnter: (to, from, next) => {
+  //   // alert('Hi ' + this.name)
+  //   next(vm => {
+  //     alert('Hi ' + vm.name)
+  //   })
+  // }
+  beforeRouteLeave: (to, from, next) => {
+    if (confirm("Have you remembered to log out") === true) {
+      next();
+    } else {
+      next(false);
     }
-  },
-  beforeRouteEnter: (to, from, next) => {
-    // alert('Hi ' + this.name)
-    next(vm => {
-      alert('Hi ' + vm.name)
-    })
   }
 };
 </script>
