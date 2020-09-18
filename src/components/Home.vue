@@ -4,11 +4,24 @@
       <div class="background">
         <h1>Welcome to Pizza Planet!</h1>
         <h2>Feeling hungry?</h2>
-        <button class="btn btn-success">Let's order!</button>
+        <button class="btn btn-success" @click="goToMenu">Let's order!</button>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goToMenu() {
+      // this.$router.go(-1)
+      // this.$router.replace('/menu')
+      // this.$router.replace({ name: 'menuLink' })
+      this.$router.push({ name: 'menuLink' })
+    }
+  }
+}
+</script>
 
 <style scoped>
   #home {
