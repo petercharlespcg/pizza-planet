@@ -30,6 +30,20 @@ const router = new VueRouter({
   mode: 'history',
 })
 
+// router.beforeEach((to, from, next) => {
+//   // alert('navigation triggered')
+//   // next(false)
+//   // console.log(to)
+//   // if (to.path === "/menu") {
+//   //   next();
+//   // } else {
+//   //   next(false);
+//   // }
+// })
+router.afterEach((to, from) => {
+  alert('after each')
+})
+
 new Vue({
   el: '#app',
   router,
