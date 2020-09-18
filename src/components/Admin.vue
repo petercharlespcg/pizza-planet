@@ -13,9 +13,9 @@
             <th>Remove from menu</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody v-for="item in getMenuItems">
           <tr>
-            <td>Margherita</td>
+            <td>{{ item.name }}</td>
             <td><button class="btn btn-outline-danger btn-sm">X</button></td>
           </tr>
         </tbody>
@@ -74,17 +74,11 @@ export default {
     ppNewPizza: NewPizza,
     ppLogin: Login
   },
-  // data() {
-  //   return {
-  //     name: 'Chris'
-  //   }
-  // },
-  // beforeRouteEnter: (to, from, next) => {
-  //   // alert('Hi ' + this.name)
-  //   next(vm => {
-  //     alert('Hi ' + vm.name)
-  //   })
-  // }
+  computed: {
+    getMenuItems() {
+      return this.$store.state.menuItems
+    }
+  },
   beforeRouteLeave: (to, from, next) => {
     if (confirm("Have you remembered to log out") === true) {
       next();
