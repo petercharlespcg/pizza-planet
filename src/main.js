@@ -31,6 +31,20 @@ const routes = [
 const router = new VueRouter({
   routes,
   mode: 'history',
+  scrollBehavior(to, from, savedPosition) {
+    // return { x: 0, y: 200 }
+    // return { selector: '/* .btn */h1'}
+    // if (savedPosition) {
+    //   return savedPosition
+    // } else {
+    //   return { x: 0, y: 0 }
+    // }
+    if (to.hash) {
+      return {
+        selector: to.hash
+      }
+    }
+  }
 })
 
 // router.beforeEach((to, from, next) => {
