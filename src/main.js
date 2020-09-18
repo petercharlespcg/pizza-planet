@@ -40,9 +40,9 @@ const router = new VueRouter({
 //   //   next(false);
 //   // }
 // })
-router.afterEach((to, from) => {
-  alert('after each')
-})
+// router.afterEach((to, from) => {
+//   alert('after each')
+// })
 
 new Vue({
   el: '#app',
