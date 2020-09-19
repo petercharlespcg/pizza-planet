@@ -13,7 +13,8 @@
     "firebase": "^7.20.0",
     "vue": "^2.5.11",
     "vue-router": "^3.4.3",
-    "vuex": "^3.5.1"
+    "vuex": "^3.5.1",
+    "vuexfire": "^3.2.4"
   },
   "browserslist": [
     "> 1%",
