@@ -16,4 +16,5 @@ const firebaseApp = Firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.database()
 // export const dbMenuRef = db.ref('menu')
 export const dbMenuRef = db.ref('menu')
+export const dbOrderRef = db.ref('orders')
 
