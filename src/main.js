@@ -31,7 +31,7 @@ Vue.filter('currency', function (val) {
 //   }, 2000)
 // })
 
-Vue.component('global-component', () => import('./components/Menu.vue'))
+// Vue.component('global-component', () => import('./components/Menu.vue'))
 
 new Vue({
   el: '#app',
