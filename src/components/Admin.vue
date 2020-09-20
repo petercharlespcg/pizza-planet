@@ -106,3 +106,8 @@ export default {
 };
 </script>
 
+<style scoped>
+  .order-number {
+    margin: 10px 0;
+  }
+</style>
