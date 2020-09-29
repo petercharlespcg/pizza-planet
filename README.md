@@ -17,6 +17,8 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+##Vue.js: Build a Full Stack App with Firebase, Vuex and Router
+https://proquestpubliclibrary-safaribooksonline-com.ezproxy.torontopubliclibrary.ca/video/programming/javascript/9781838980627
 # Notes
 Chapter 1 : Introduction & Getting Started
 
